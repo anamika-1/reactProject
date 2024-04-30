@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import {InputBox} from './components/index.js'
 import useCurrencyInfo from './hooks/useCurrencyInfo'
+import { InputBox } from './components/index.js'
 
 
 function App() {
@@ -48,7 +48,7 @@ function App() {
                             currencyOptions={options}
                             onCurrencyChange={(currency) => setFrom(currency)}
                             onAmountChange={(amount) => setAmount(amount)}
-                            selectCurrency={from}
+                            selectedCurrency={from}
                         />
                     </div>
                     <div className="relative w-full h-0.5">
